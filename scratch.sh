@@ -1,3 +1,3 @@
 git add .
 git commit -m "updates"
-git push https://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@github.com/guilhermeperin/dlsca_streamlit
+git push https://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@github.com/guilhermeperin/dlsca_streamlit
