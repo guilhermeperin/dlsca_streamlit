@@ -12,8 +12,7 @@ st.markdown('Cryptographic algorithms are mathematically secure. However, when d
             'implemented to mitigate side-channel attacks. In this article, we demonstrate how protected AES implementations are still'
             'vulnerable to a very strong class of side-channel attacks known as profiling SCA. The process follows exactly the supervised'
             'learning procedure and we show how deep neural network can be used as the learning algorithm.')
-st.('')
-st.markdown('This page provides state-of-the-art deep learning models and results for open-source SCA datasets.')
+st.header('Profiling SCA')
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
 st.line_chart(chart_data)
