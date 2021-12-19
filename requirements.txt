@@ -1,0 +1,13 @@
+numpy==1.19.4
+tensorflow-gpu==2.0.0
+joblib
+keras==2.1.6
+sqlalchemy
+python-dotenv
+flaskcode
+h5py==2.10.0
+termcolor
+pytz
+sklearn
+scipy
+
