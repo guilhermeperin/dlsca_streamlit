@@ -10,4 +10,5 @@ termcolor
 pytz
 sklearn
 scipy
-
+aisy-sca==0.2.2
+aisy-database==0.2.0
