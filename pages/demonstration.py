@@ -47,13 +47,40 @@ def write():
 
     st.line_chart(chart_data)
 
-    st.subheader('2. Select the neural network')
+    st.subheader('2. Model creation')
 
-    dataset_option = st.selectbox(
-        '',
-        ('MLP_1', 'MLP_2', 'CNN_1', 'CNN_2'))
+    model_option = st.radio(
+        'Select the model creation type',
+        ('Single Model', 'Model Search'))
 
-    st.code(models_dict[dataset_option], language='python')
+    if model_option == "Single Model":
+        col1, col2 = st.columns([5, 1])
 
-    st.subheader('3. Select the model search')
-    st.subheader('4. Select the explain method')
+        with col1:
+            single_model_option = st.selectbox(
+                'Select the neural network',
+                ('MLP_1', 'MLP_2', 'CNN_1', 'CNN_2'))
+            st.code(models_dict[single_model_option], language='python')
+
+        with col2:
+            st.number_input("Number of epochs", min_value=1)
+            st.number_input("Batch-size", min_value=1)
+
+        st.button("Start")
+
+    if model_option == "Model Search":
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            model_search_option = st.selectbox(
+                'Select the model search type',
+                ('Random Search', 'Grid Search', 'Bayesian Optimization', 'Reinforcement Learning'))
+
+        with col2:
+            objective_metric = st.radio("Select the objective metric", ("Guessing Entropy", "Success Rate", "Loss", "Accuracy"))
+
+        with col3:
+            number_of_searches = st.number_input("Number of searches", min_value=1)
+
+        st.button("Start")
+
+    st.subheader('3. Select the explain method')
