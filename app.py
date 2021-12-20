@@ -16,7 +16,7 @@ PAGES = {
     "SideDL": pages.introduction,
     "Theory": pages.theory,
     "Optimization": pages.optimization,
-    "Explain AI": pages.explainai,
+    "Explainable AI": pages.explainai,
     "Demonstration": pages.demonstration
 }
 
