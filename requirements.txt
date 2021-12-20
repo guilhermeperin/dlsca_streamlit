@@ -1,17 +1,4 @@
 numpy==1.19.4
-tensorflow-gpu==2.0.0
-joblib
-keras==2.1.6
-sqlalchemy
-python-dotenv
-flaskcode
-h5py==2.10.0
-termcolor
-pytz
-sklearn
-scipy
-aisy-sca==0.2.2
-aisy-database==0.2.0
 streamlit
 matplotlib
 awesome_streamlit
