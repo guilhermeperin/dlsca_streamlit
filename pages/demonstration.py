@@ -84,3 +84,19 @@ def write():
         st.button("Start")
 
     st.subheader('3. Select the explain method')
+    col1, col2 = st.columns([1, 4])
+
+    with col1:
+        explain_method = st.selectbox(
+            'Select the explainability method',
+            ('Input Gradients', 'Layer Activity')
+        )
+
+    with col2:
+        if explain_method == "Input Gradients":
+            st.image("images/visualization.png")
+
+        if explain_method == "Layer Activity":
+            st.write("Activity Layer 1: 10%")
+            st.write("Activity Layer 1: 18%")
+            st.write("Activity Layer 1: 20%")
