@@ -14,3 +14,4 @@ aisy-sca==0.2.2
 aisy-database==0.2.0
 streamlit
 matplotlib
+awesome_streamlit
