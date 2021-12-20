@@ -3,3 +3,5 @@ __pycache__/
 venv
 *.sh
 *.h5
+save_traces.py
+resources
